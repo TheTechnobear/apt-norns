@@ -1,11 +1,12 @@
-#apt-norn
+# apt-norn
 
 this repo contains debian packages for things I release for the norns :) 
 
 
-#installation
+# installation
 
 on the norns, simply type
 
+```
 sudo curl https://thetechnobear.github.io/apt-norns/install.sh | sh
-
+```
