@@ -12,7 +12,10 @@ sudo curl https://thetechnobear.github.io/apt-norns/install.sh | sh
 ```
 
 
-# updating packages
+
+
+
+# developer notes: updating packages in this repo
 copy debs to the repo then run
 ```
 dpkg-scanpackages . /dev/null |gzip > Packages.gz
