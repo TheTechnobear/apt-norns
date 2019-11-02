@@ -35,13 +35,21 @@ sudo apt-get install mec sidekick orac
 
 ## updating packages in this repo
 
-Remember to update the version number of each packages in the deb control file.
+a) clone this repo in the normal way
+```
+git clone https://github.com/TheTechnobear/apt-norns
+```
 
-a) copy debs to the cloned repo
+b) update the packages, and copy debs to this repo
+note: Remember to update the version number of each packages in the deb control file!
 
-b) run:
+c) update pacakges file 
+
+run:
 ```
 dpkg-scanpackages . /dev/null |gzip > Packages.gz
 ```
 c) add, commit and push repo
 
+note: if you dont have permission to this repo, the above coudl be done in a forked repo, 
+and then a PR sent.
