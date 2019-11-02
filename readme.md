@@ -2,8 +2,6 @@
 
 this repo contains debian packages for things I release for the norns :) 
 
-
-
 # Norns users 
 
 ## Installation
@@ -43,9 +41,8 @@ git clone https://github.com/TheTechnobear/apt-norns
 b) update the packages, and copy debs to this repo
 note: Remember to update the version number of each packages in the deb control file!
 
-c) update pacakges file 
+c) update packages file 
 
-run:
 ```
 dpkg-scanpackages . /dev/null |gzip > Packages.gz
 ```
@@ -53,3 +50,8 @@ c) add, commit and push repo
 
 note: if you dont have permission to this repo, the above coudl be done in a forked repo, 
 and then a PR sent.
+
+users can then add this as a deb repo with the following address
+https://thetechnobear.github.io/apt-norns/
+
+note: this is basically what the install.sh does ;) 
